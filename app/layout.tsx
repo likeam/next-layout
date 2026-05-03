@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <html>
       <body className="bg-gray-100">
         <div className=" min-h-screen flex flex-col">
-          <header className=" bg-purple-800 text-white p-4">
+          <header className=" bg-purple-800 text-gray-300 p-4">
             <nav>
               <ul className="flex space-x-4">
                 <li>
@@ -29,12 +29,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </nav>
           </header>
           <div className="flex flex-1 bg-gray-400">
-            <aside className=" w-64 bg-purple-300 p-4">
+            <aside className=" w-64 bg-purple-500 p-4">
               <ul>
                 <li>
                   <Link
                     href="/category/technology    "
-                    className=" block hover:text-purple-400 p-4"
+                    className=" block hover:bg-purple-600 hover:text-purple-100 p-4"
                   >
                     Technology
                   </Link>
@@ -42,7 +42,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <li>
                   <Link
                     href="/category/fashion    "
-                    className=" block hover:text-purple-400 p-4"
+                    className=" block hover:bg-purple-600 hover:text-purple-100 p-4"
                   >
                     Fashion
                   </Link>
@@ -50,7 +50,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <li>
                   <Link
                     href="/category/design    "
-                    className=" block hover:text-purple-400 p-4"
+                    className=" block hover:bg-purple-600 hover:text-purple-100 p-4"
                   >
                     Design
                   </Link>
@@ -58,16 +58,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <li>
                   <Link
                     href="/category/business    "
-                    className=" block hover:text-purple-400 p-4"
+                    className=" block hover:bg-purple-600 hover:text-purple-100 p-4"
                   >
                     Business
                   </Link>
                 </li>
               </ul>
             </aside>
-            <main className=" flex-1 ">{children}</main>
+            <main className=" flex-1 p-6 bg-white ">{children}</main>
           </div>
-          <footer className=" bg-purple-800 text-white p-4 text-center">
+          <footer className=" bg-purple-800 text-gray-300 p-4 text-center">
             <p>&copy; 2023 HB Digital. All rights reserved.</p>
           </footer>
         </div>
