@@ -25,7 +25,7 @@ const BlogLayout = ({
               </Link>
             </li>
             <li>
-              <Link href="/blog/2" className=" block py-2 hover:bg-gray-400">
+              <Link href="/blog/2" className=" block py-3 hover:bg-gray-400">
                 {" "}
                 Blog Post 2
               </Link>
